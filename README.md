@@ -7,13 +7,13 @@ This Dockerfile builds an image based on the `amazoncorretto:19-alpine-jdk` imag
 Use Java to build the `HelloWorld.class` file in the `./out` directory:
 
 ```console
-C:\Users\antonio> javac -d ./out HelloWorld.java
+C:\Users\mario> javac -d ./out HelloWorld.java
 ```
 
 Then, build the image:
 
 ```console
-C:\Users\antonio> docker build -t docker-hello-java .
+C:\Users\mario> docker build -t docker-hello-java .
 ```
 
 ## Run
@@ -21,6 +21,6 @@ C:\Users\antonio> docker build -t docker-hello-java .
 Run the following command to start the container:
 
 ```console
-C:\Users\antonio> docker run docker-hello-java
+C:\Users\mario> docker run docker-hello-java
 Hello, World
 ```
